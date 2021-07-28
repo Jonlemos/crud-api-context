@@ -21,6 +21,7 @@ const UserForm = (props) => {
     axios.post('http://localhost:4000/business/add', obj)
 
     setUser(initialFormState)
+    props.userAdd(!props.atualState)
   }
 
   return (

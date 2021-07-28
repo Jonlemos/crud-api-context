@@ -1,7 +1,8 @@
-import React from 'react'
-import axios from 'axios'
+import React, { useContext } from 'react'
+import { UsersContext } from '../context/UserContext'
 
 const SimpleTable = (props) => {
+  const { users } = useContext(UsersContext)
   return (
     <table>
       <thead>
@@ -12,8 +13,8 @@ const SimpleTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        {props.users ? (
-          props.users.map((user) => (
+        {users ? (
+          users.map((user) => (
             <tr key={user._id}>
               <td>{user.person_name}</td>
               <td>{user.business_name}</td>
