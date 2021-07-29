@@ -33,8 +33,8 @@ const App = () => {
     setChangeUser(!changeUser)
   }
 
-  const updateUser = (user) => {
-    console.log(user)
+  const updateUser = (user, updateUser) => {
+    setEditing(false)
 
     const obj = {
       person_name: user.name,
@@ -42,9 +42,10 @@ const App = () => {
     }
     axios
       .post('http://localhost:4000/business/update/' + user.id, obj)
-      .then((res) => console.log(res.data))
-
-    setChangeUser(!changeUser)
+      .then((res) => {
+        console.log(res.data)
+        setChangeUser(!changeUser)
+      })
   }
 
   const editRow = (user) => {
