@@ -35,12 +35,7 @@ const EditUserForm = (props) => {
         onChange={handleInputChange}
       />
       <button>Atualizar Usuário</button>
-      <button
-        onClick={() => props.setEditing(false)}
-        className="button muted-button"
-      >
-        Cancelar
-      </button>
+      <button onClick={() => props.setEditing(false)}>Cancelar</button>
     </form>
   )
 }

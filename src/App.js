@@ -63,7 +63,7 @@ const App = () => {
     <div className="container">
       <h1>Simples Crud-Klever</h1>
       <div className="flex-row">
-        <div className="flex-large">
+        <div>
           {editing ? (
             <>
               <h2>Editar Usuário</h2>
@@ -81,7 +81,7 @@ const App = () => {
             </>
           )}
         </div>
-        <div className="flex-large">
+        <div>
           <h2>Todos usuários</h2>
           <SimpleTable
             users={users}
