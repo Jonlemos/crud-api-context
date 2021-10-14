@@ -2,7 +2,7 @@
 ### Crud com api própria.
 ____________________________________
 
-Repositório criado para teste fullstack na BizSys
+Repositório criado para teste fullstack
 
 ### Stacks
 React, javascript
