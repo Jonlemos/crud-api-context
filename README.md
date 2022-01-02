@@ -2,7 +2,7 @@
 ### Crud com api própria.
 ____________________________________
 
-Repositório criado para teste fullstack
+Repositório criado para teste Front-end
 
 ### Stacks
 React, javascript
